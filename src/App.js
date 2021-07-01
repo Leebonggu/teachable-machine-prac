@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Rotuer, Route } from 'react-router-dom';
+import Layout from './Layout';
+import ImageClassfication from './Components/ImageClassfication';
+import SoundClassification from './Components/SoundClassification';
+import PoseClassfication from './Components/PoseClassfication';
+import Demo from './Components/Demo';
+import About from './Components/About';
+import Main from './Components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Rotuer>
+      <Layout>
+        <Route exact path='/image-classfication'>
+          <ImageClassfication />
+        </Route>
+        <Route exact path='/sound-classfication'>
+          <SoundClassification />
+        </Route>
+        <Route exact path='/pose-classfication'>
+          <PoseClassfication />
+        </Route>
+        <Route exact path='/demo'>
+          <Demo />
+        </Route>
+        <Route exact path='/about'>
+          <About />
+        </Route>
+        <Route exact path='/'>
+          <Main />
+        </Route>
+      </Layout>
+    </Rotuer>
   );
 }
 
