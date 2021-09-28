@@ -1,6 +1,5 @@
 import React from 'react';
 import DemoImageModel from './DemoImageClassification';
-import styled from 'styled-components';
 
 import Container from '../../Common/Container';
 

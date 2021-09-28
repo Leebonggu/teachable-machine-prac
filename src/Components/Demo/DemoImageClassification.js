@@ -40,7 +40,7 @@ function DemoImageModel() {
         await webcam.stop();
       }
     }
-  }, []);
+  }, [webcam]);
 
   async function init() {
     console.log('init');
@@ -86,9 +86,7 @@ function DemoImageModel() {
       if (!labelRef.current) {
         return;
       }
-      const classPrediction = `${prediction[i].className}:  ${prediction[i].probability.toFixed(2) * 100}%`
-      // imageUrl: images[prediction[i].className],
-      // precent: prediction[i].probability.toFixed(2) * 100
+
       a.push({
         imageUrl: images[prediction[i].className],
         name: prediction[i].className,
@@ -107,10 +105,6 @@ function DemoImageModel() {
     });
     setData(r);
   }
-
-  const handleComplete = () => {
-    setComplete(true);
-  };
 
   const handleCloseModal = () => {
     setOpenModal(false);
