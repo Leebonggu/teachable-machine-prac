@@ -1,5 +1,12 @@
 # Teachable Machine
 
+## Do you know TWICE?
+![](./demo.gif)
+
+---
+
+## Thinking...
+
 - 머신러닝은 어렵다
 - 그러나 만들어진 머신러닝을 사용하는건 다른 문제
 - 잘 만들어진 머신러닝을 가쟈와 자유롭게 사용해보자
