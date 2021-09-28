@@ -22,6 +22,8 @@ function index() {
       <Container maxWidth="md" className={classes.content}>
         <Typography component="div" >
           <Typography>소개페이지</Typography>
+          <Typography>2019년 어느날...난 9명의 선녀를 만났다.</Typography>
+          <Typography variant="h2" gutterBottom component="div">바로 트와이스</Typography>
         </Typography>
       </Container>
     </>
