@@ -1,6 +1,7 @@
 # Teachable Machine
 
 ## Do you know TWICE?
+[https://twicelover.netlify.app](https://twicelover.netlify.app)
 ![](./demo.gif)
 
 ---
